@@ -409,7 +409,7 @@ Return the final answers in the JSON format.`
         ]
 
         const model = this.geminiClient.getGenerativeModel({
-          model: config.solutionModel || 'gemini-2.5-pro'
+          model: config.solutionModel || 'gemini-2.5-flash'
         })
 
         const result = await model.generateContent({
@@ -550,7 +550,7 @@ Just return the structured JSON without any other text.`
           ]
 
           const model = this.geminiClient.getGenerativeModel({
-            model: config.extractionModel || 'gemini-2.5-pro'
+            model: config.extractionModel || 'gemini-2.5-flash'
           })
 
           const result = await model.generateContent({
@@ -716,7 +716,7 @@ Just return the structured JSON without any other text.`
         }
 
         const model = this.geminiClient.getGenerativeModel({
-          model: config.solutionModel || 'gemini-2.5-pro'
+          model: config.solutionModel || 'gemini-2.5-flash'
         })
 
         const result = await model.generateContent({

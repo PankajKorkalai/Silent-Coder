@@ -45,8 +45,8 @@ const modelCategories: ModelCategory[] = [
     ],
     geminiModels: [
       {
-        id: 'gemini-2.5-pro',
-        name: 'Gemini 2.5 Pro',
+        id: 'gemini-2.5-flash',
+        name: 'Gemini 2.5 Flash',
         description: 'Newest and most capable model for problem extraction'
       },
       {
@@ -79,8 +79,8 @@ const modelCategories: ModelCategory[] = [
     ],
     geminiModels: [
       {
-        id: 'gemini-2.5-pro',
-        name: 'Gemini 2.5 Pro',
+        id: 'gemini-2.5-flash',
+        name: 'Gemini 2.5 Flash',
         description: 'Newest and most capable model for solution generation'
       },
       {
@@ -113,8 +113,8 @@ const modelCategories: ModelCategory[] = [
     ],
     geminiModels: [
       {
-        id: 'gemini-2.5-pro',
-        name: 'Gemini 2.5 Pro',
+        id: 'gemini-2.5-flash',
+        name: 'Gemini 2.5 Flash',
         description: 'Newest and most capable model for debugging'
       },
       {
@@ -169,9 +169,9 @@ export function SettingsDialog({ open: openProp, onOpenChange }: SettingsDialogP
       setSolutionModel('gpt-4o')
       setDebuggingModel('gpt-4o')
     } else {
-      setExtractionModel('gemini-2.5-pro')
-      setSolutionModel('gemini-2.5-pro')
-      setDebuggingModel('gemini-2.5-pro')
+      setExtractionModel('gemini-2.5-flash')
+      setSolutionModel('gemini-2.5-flash')
+      setDebuggingModel('gemini-2.5-flash')
     }
   }
 
